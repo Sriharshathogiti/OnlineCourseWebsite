@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Skill monk</title>
+<link rel="shortcut icon" type="image" href="./assests/logo1.png">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!-- <link rel="stylesheet" href="./Tindex.css"> -->
+<script src="./Tindex.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+	rel="stylesheet">
+<style>
+*{
+    padding:0;
+    margin: 3px;
+
+}
+#topnav{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height:40px;
+    display: flex;
+}
+#topicons{
+    margin-left: 950px;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    justify-content: space-between;
+}
+#navbar{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(243, 236, 236, 0.93);
+    border-color: rgba(255, 255, 255, 0.005);
+    border-width: 10px;
+    
+}
+#Hlogo{
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+#mainlist{
+    display:flex;
+    flex-wrap: nowrap;
+    float:right;
+    padding-right: 100px;
+    position: relative;
+}
+.li{
+    color: rgb(9, 9, 9);
+    font-size: 18px;
+    list-style: none;
+    margin: 0px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    padding-right: 200px;
+   justify-content:flex-start;
+    font-family: 'Roboto', sans-serif;
+}
+#a{
+    width: 25px;
+    height: 25px;
+}
+.container {
+    max-width:400px;
+    margin: 78px;
+    padding: 20px;
+    display: none; /* Initially hide the registration popup */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    font-family: 'Amatic SC', cursive;
+}
+#fp{
+    font-size: 12px;
+}
+.li:hover{
+    background-color: rgb(16, 208, 16);
+    color: white;
+    width: 50px;
+    height: 80px;
+    position: relative;
+}
+#a:hover{
+    color: white;
+}
+#registrationPopup:hover + #hoverIcon {
+    display: block; /* Show the registration popup when hovered over the icon */
+    box-shadow: 1px 2px 2px;
+}
+#u{
+    width: 250px;
+    font-size: medium;
+   
+    font-family: 'Amatic SC', cursive;
+}
+#submit{
+    color: white;
+    background-color: rgb(32, 213, 32);
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+}
+
+.banner2{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.485),rgba(0, 0, 0, 0.463)), url(./assests/bgimg1.jpg);
+    background-repeat: no-repeat;
+}
+.content2{
+   align-self: self-end;
+    padding-left: 200px;
+    padding-top: 100px;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: large;
+    
+}
+.content3{
+    align-self: self-end;
+    font-family: 'Sarabun', sans-serif;
+}
+#midlow{
+    background-color: rgb(216, 229, 239);
+    width: 100%;
+    height: 300px;
+
+}
+.content{
+  
+  font-family: 'Shadows Into Light', cursive;
+  padding-left: 45%;
+  font-size: 30px;
+
+}
+#con1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: small;
+    padding-right: 50px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    row-gap: 60px;
+    column-gap: 300px;
+}
+.col1{
+    width: 85px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+.col2{
+    width: 85px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+.col3{
+    width: 85px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+.dotted1{
+    width: 100px;
+    height: 100px;
+    border: dashed;
+    border-radius: 70px;
+    color: rgba(28, 26, 26, 0.655);
+}
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    font-family: 'Shadows Into Light', cursive;
+}
+.footerbottom{
+    width: 100%;
+    height: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-top: 15px;
+    font-size: 13px;
+    flex-direction: row;
+    background-color: rgb(29, 229, 29);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#bottomlist{
+    display:flex;
+    float:right;
+   padding-left: 600px;
+}
+.i{
+    font-size: 10px;
+    list-style: none;
+    height: 50px;
+    width: 120px;
+    
+}
+</style>
+</head>
+<body>
+	<!--top navbar-->
+	 <div id="topnav">
+    
+    <img  id="Hlogo" src="./assests/logo1.png"   alt="skillmonk">
+
+    <div id="topicons">
+        <i class="fa-regular fa-envelope"></i>contact@skillmonk.com
+        <i class="fa-solid fa-phone-volume" style="color: #101114;"></i>Have any queries ?<b>+919495861333</b>
+       </div>
+
+   </div>
+	<!--navbar-->
+	<div id="navbar">
+		<ul id="mainlist">
+			<li class="li" id="hoverIcon"><img id="a"
+				src="./assests/tech-support.png">For Professionals</li>
+			<!-- Registration popup content -->
+			<div class="container" id="registrationPopup">
+				<h2>let us help you</h2>
+				<p id="fp">please provide the below</p>
+				<form action="register" method="post">
+					<input type="radio" name="prifix" value="mr.">mr. &nbsp;&nbsp;<input
+						type="radio" name="r" value="ms.">ms.<br> <input
+						type="text" id="u" name="userName" placeholder="Username" required><br>
+					<input type="email" id="u" name="emailid" placeholder="Email Address"
+						required><br> <input type="text" id="u" name="mobilenumber"
+						placeholder="Mobile number" required><br> <select
+						id="u" name="course"><option value="">select a
+							course</option>
+						<option value="full StackJava">Full StackJava</option>
+						<option value="Artificial intillegence">Artificial
+							intelligence</option>
+						<option value="machine learning">Machine Learning</option>
+						<option value="data science">Data Science</option>
+					</select><br>
+					<p id="fp">For which of these you need tranning ?</p>
+					<select id="u" name="modeOfTraining"><option>Mode of
+							Traning</option>
+						<option>Online</option>
+						<option>Offline</option>
+						<option>Hybrid</option>
+					</select><br>
+					<p id="fp">For which mode do you like tranning ?</p>
+					<input type="text" id="u" name="yourself"
+						placeholder="About yourself" style="width: 250px; height: 100px;"><br>
+					<input id="submit" type="submit">
+					<p id="fp">
+						By registering with us you get suggestions with<br>
+						recommended Courses,Trainers and Experts.
+					</p>
+				</form>
+			</div>
+			<li class="li"><img id="a" src="./assests/reading.png">For
+				Students</li>
+		</ul>
+	</div>
+	<!-- banner -->
+	<div class="banner2">
+		<div class="content2">
+			<p>Accelerate,scale,Transform your</p>
+			<div class="content3">
+				<h1>CORPORATE CAREER</h1>
+				<br> <br> <br> <br>
+				<h4>GET STARTED WITH US</h4>
+				<br>
+				<p>
+					<i class="fa-regular fa-circle-check" style="color: #fafafa;"></i>
+					&nbsp;&nbsp;&nbsp;Get suggetstions with list of preferred <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&courses
+					which suits your career.
+				</p>
+				<br>
+				<p>
+					<i class="fa-regular fa-circle-check" style="color: #fafafa;"></i>&nbsp;&nbsp;&nbsp;Choose
+					from the list which have highly<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
+					qualified trainers.
+				</p>
+				<br>
+				<p>
+					<i class="fa-regular fa-circle-check" style="color: #fafafa;"></i>&nbsp;&nbsp;&nbsp;Book
+					an appointment and get connected<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&with
+					experts.
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div id="midlow">
+		<div class="content">
+			<p>Our Approach</p>
+			<p id="con1">To help you to connect Corporate Trainers</p>
+		</div>
+
+
+		<div class="row">
+            <div class="dotted1">
+                <div class="col1">
+                <img src="./assests/teaching.png" style="height: 40px;width: 40px; padding-left: 10px;padding-top: 20px;"><br><br>
+                <h5 style="color: rgb(23, 225, 23);font-size: 20px;">100+</h5>
+                <p>Qualified Trainers</p>
+            </div>
+        </div>
+            
+        <div class="dotted1">
+            <div class="col2">
+                <img src="./assests/online&offline.png" style="height: 40px;width: 40px; padding-left: 15px;padding-top: 20px;"><br><br>
+                <h5 style="color: rgb(23, 225, 23); padding-top: 10px;">Available</h5>
+                <p>online&inhouse</p>
+            </div>
+        </div>
+            <div class="dotted1"> 
+                <div class="col3">
+                    <img src="./assests/book.png" style="height: 40px;width: 40px; padding-left: 15px;padding-top: 20px;"><br><br>
+                    <h5 style="color: rgb(23, 225, 23);font-size: 20px;">100+</h5>
+                    <p>professional courses</p>
+                </div>
+            </div>
+            
+        </div>
+	</div>
+	<!-- offer -->
+	<div id="footer">
+		<img src="./assests/text-message-icon-android-19.jpg"
+			style="width: 100px; height: 100px;">
+		<p>Have any queries ?</p>
+		<h3 style="margin-top: 20px; margin-left: 5px;">Lets Talk@ +91
+			9578 800 900</h3>
+	</div>
+	<div class="footerbottom">
+		<div class="copyright">
+			<strong>@skillmonk</strong>.All Rights Reserved
+		</div>
+		<div class="credits">
+			<ul id="bottomlist">
+				<li class="i">Privacy Policy</li>
+				<li class="i">Disclamer</li>
+				<li class="i">Terms & Conditions</li>
+				<li class="i">payment & refund Policy</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+const registrationPopup = document.getElementById('registrationPopup');
+const hoverIcon = document.getElementById('hoverIcon');
+
+hoverIcon.addEventListener('mouseenter', () => {
+    registrationPopup.style.display = 'block';
+});
+
+registrationPopup.addEventListener('mouseleave', () => {
+    registrationPopup.style.display = 'none';
+});
+</script>
+</body>
+</html>
